@@ -1,1 +1,58 @@
-# GitHub User Creation Date App\n\n## Live Demo\nVisit the live demo: [DEPLOYMENT_URL_PLACEHOLDER](DEPLOYMENT_URL_PLACEHOLDER)\n\n## Overview\nThis is a simple, single-page web application that allows users to fetch the account creation date of any GitHub user. It utilizes the GitHub API to retrieve user data and displays the `created_at` field in `YYYY-MM-DD UTC` format. The application also supports authenticated requests using an optional `token` query parameter.\n\n## Features\n*   **Fetch GitHub User Data**: Quickly retrieve account creation dates.\n*   **Formatted Output**: Displays dates in a clear `YYYY-MM-DD UTC` format.\n*   **Authentication Support**: Optional support for GitHub Personal Access Tokens via a `?token=` query parameter to mitigate API rate limits.\n*   **Responsive Design**: Built with Tailwind CSS for a modern, mobile-first user experience.\n*   **Error Handling**: Provides informative error messages for invalid usernames, API issues, or rate limits.\n\n## Technologies Used\n*   **HTML5**: Structure of the web page.\n*   **Tailwind CSS (CDN)**: For responsive and utility-first styling.\n*   **JavaScript (ES6+)**: For fetching data from the GitHub API and dynamically updating the UI.\n*   **GitHub API**: The primary data source for user information.\n\n## Setup\nThis project is a single HTML file and does not require any build tools or complex setup.\n\n1.  **Clone the repository (or copy the `index.html` content):**\n    ```bash\n    git clone <repository-url>\n    cd <repository-name>\n    ```\n    If you only have the `index.html` file, save it as `index.html` on your local machine.\n\n2.  **Open `index.html`**: Simply open the `index.html` file in your web browser.\n    ```bash\n    open index.html # On macOS\n    start index.html # On Windows\n    xdg-open index.html # On Linux\n    ```\n\n## Usage\n1.  Open `index.html` in your web browser.\n2.  Enter a GitHub username (e.g., `octocat`, `github`) into the input field.\n3.  Click the "Fetch Creation Date" button.\n4.  The account creation date will be displayed below the form.\n\n### Using an Access Token (Optional)\nTo make authenticated requests and avoid GitHub API rate limits (which are stricter for unauthenticated requests), you can append a `?token=` query parameter to your URL.\n\n1.  Generate a Personal Access Token (classic) on GitHub with no scopes (it only needs public access).\n2.  Append it to your URL like this:\n    `file:///path/to/your/index.html?token=YOUR_GITHUB_TOKEN`\n    or if hosted:\n    `https://your-domain.com/?token=YOUR_GITHUB_TOKEN`\n\n    *Replace `YOUR_GITHUB_TOKEN` with your actual Personal Access Token.*\n\n## Project Structure\n```\n.\n├── index.html\n├── README.md\n└── LICENSE\n```\n*   `index.html`: The main and only HTML file containing all the structure, styling (via Tailwind CDN), and JavaScript logic for the application.\n*   `README.md`: This file, providing project information.\n*   `LICENSE`: The MIT License text.\n\n## License\nThis project is open-sourced under the MIT License. See the `LICENSE` file for more details.\n
+# GitHub User Profile Lookup
+
+![GitHub User Lookup Screenshot](https://raw.githubusercontent.com/Shubham30000/github-user-lookup-test/main/screenshot.png)
+_A screenshot of the application in action._
+
+## 🚀 Live Demo
+
+Experience the application live now:
+
+### [🔗 Try it live here!](https://Shubham30000.github.io/github-user-lookup-test/)
+
+## 📋 Overview
+
+This straightforward web application provides a quick and easy way to fetch and display the GitHub account creation date for any specified username. Leveraging the GitHub API and styled with Bootstrap, it offers a responsive and intuitive interface for instant lookups.
+
+## ✨ Features
+
+*   **GitHub Username Lookup**: Easily search for any public GitHub user's profile.
+*   **Account Creation Date Display**: Shows the exact account creation date in YYYY-MM-DD UTC format.
+*   **Responsive Design**: Built with Bootstrap for a clean, modern, and mobile-friendly user interface.
+*   **GitHub API Integration**: Directly interacts with the official GitHub API for reliable data retrieval.
+*   **Optional Authenticated Requests**: Supports an optional `?token=` query parameter for making authenticated API requests, which can help with rate limits during development or testing.
+
+## 🛠️ Technologies Used
+
+*   **HTML5**: For structuring the web content.
+*   **Bootstrap**: A powerful, open-source frontend toolkit for designing responsive and mobile-first websites.
+*   **JavaScript (ES6+)**: For fetching data from the GitHub API, processing responses, and dynamically updating the DOM.
+*   **GitHub API**: The primary data source for user profile information.
+
+## 📦 Setup
+
+To get a local copy up and running, follow these simple steps.
+
+### Prerequisites
+
+*   A modern web browser.
+*   Git installed on your machine.
+
+### Installation
+
+1.  **Clone the repository**:
+    ```bash
+git clone https://github.com/Shubham30000/github-user-lookup-test.git
+    ```
+2.  **Navigate into the project directory**:
+    ```bash
+cd github-user-lookup-test
+    ```
+3.  **Open `index.html`** in your preferred web browser. You can usually do this by double-clicking the file or by running `open index.html` (on macOS/Linux) or `start index.html` (on Windows) from your terminal within the project directory.
+
+## 💡 Usage
+
+Using the GitHub User Profile Lookup is simple and intuitive:
+
+1.  **Access the Application**: Open `index.html` in your browser (or visit the [Live Demo](https://Shubham30000.github.io/github-user-lookup-test/)).
+2.  **Enter GitHub Username**: Locate the input field with `form id='github-user-form'` and type in the GitHub username you wish to look up.
+3.  **Submit**: Click the 
